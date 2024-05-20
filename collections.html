@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warnerbros Website - Collections</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 60px;
+			margin-left: 50px;
+        }
+
+        .collection-item {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .collection-item img {
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .collection-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .collection-description {
+            font-size: 16px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="Images/logo.png" alt="Your Logo" class="logo">
+            <div class="title">WARNERBROS</div>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+
+    <nav class="vertical-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv-shows.html">TV Shows</a></li>
+            <li><a href="games-apps.html">Games & Apps</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="collection-item">
+            <img src="Images/collection1.jpg" alt="Collection 1">
+            <div class="collection-title">Black Voices</div>
+            <div class="collection-description">Discover timeless stories and powerful performances from our Black community.</div>
+        </div>
+        <div class="collection-item">
+            <img src="Images/collection2.jpg" alt="Collection 2">
+            <div class="collection-title">True Romance</div>
+            <div class="collection-description">Romantic movies that will make you laugh, cry and, yes, believe in true love!</div>
+        </div>
+        <div class="collection-item">
+            <img src="Images/collection3.jpg" alt="Collection 3">
+            <div class="collection-title">Binge TV</div>
+            <div class="collection-description">We have the perfect collection of TV Series to meet your binge-watching needs.</div>
+        </div>
+		<div class="collection-item">
+            <img src="Images/collection4.jpeg" alt="Collection 4">
+            <div class="collection-title">Hottest Picks</div>
+            <div class="collection-description">Discover the “Hottest Picks” from the Warner Bros. Library.</div>
+        </div>
+		<div class="collection-item">
+            <img src="Images/collection5.jpg" alt="Collection 5">
+            <div class="collection-title">4K Movies</div>
+            <div class="collection-description">Look for it on Digital & 4K Ultra HD! Buy Now</div>
+        </div>
+		<div class="collection-item">
+            <img src="Images/collection6.jpg" alt="Collection 6">
+            <div class="collection-title">Holiday</div>
+            <div class="collection-description">Cozy up with these Warner Bros. holiday favorites! </div>
+        </div>
+		<div class="collection-item">
+            <img src="Images/collection7.jpg" alt="Collection 7">
+            <div class="collection-title">Chills and Thrills</div>
+            <div class="collection-description">Get your fill of chills and thrills with some of our greatest Halloween films!</div>
+        </div>
+		<div class="collection-item">
+            <img src="Images/collection8.jpeg" alt="Collection 8">
+            <div class="collection-title">DC</div>
+            <div class="collection-description">Team up with DC's most iconic Super Heroes and Super-Villains to save the day! </div>
+        </div>
+		<div class="collection-item">
+            <img src="Images/collection9.jpg" alt="Collection 9">
+            <div class="collection-title">Supernatural</div>
+            <div class="collection-description">Carry on with the thrilling and terrifying journey of the Winchester brothers in Supernatural</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#collections">Collections</a>
+            <a href="#feedback">Feedback</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

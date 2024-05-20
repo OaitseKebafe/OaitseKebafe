@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warnerbros Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Images/logo.png" alt="Your Logo" class="logo">
+            <div class="title">WARNERBROS</div>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+
+    <nav class="vertical-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv-shows.html">TV Shows</a></li>
+            <li><a href="games-apps.html">Games & Apps</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="Images/sandman.jpg" alt="Movie">
+            <div class="caption">THE SANDMAN</div>
+        </div>
+        <div class="slide fade">
+            <img src="Images/godzilla.jpg" alt="TV Show">
+            <div class="caption">GODZILLA X KONG</div>
+        </div>
+        <div class="slide fade">
+            <img src="Images/watchers.jpg" alt="Game">
+            <div class="caption">THE WATCHERS</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+	<div class="trailer-container">
+    <div class="trailer">
+        <iframe width="320" height="200" src="https://www.youtube.com/embed/hJiPAJKjUVg" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="trailer">
+        <iframe width="320" height="200" src="https://www.youtube.com/embed/wPwzBUui1GA" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="trailer">
+        <iframe width="320" height="200" src="https://www.youtube.com/embed/pBk4NYhWNMM" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+	
+    <footer>
+        <div class="footer-links">
+            <a href="#collections">Collections</a>
+            <a href="#feedback">Feedback</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

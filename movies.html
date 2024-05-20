@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Warnerbros Movies">
+    <meta name="keywords" content="Warnerbros, movies">
+    <title>Warnerbros Movies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="Images/logo.png" alt="Warnerbros Logo" class="logo">
+            <div class="title">WARNERBROS</div>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+
+    <nav class="vertical-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv-shows.html">TV Shows</a></li>
+            <li><a href="games-apps.html">Games & Apps</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="movies-section">
+            <h2>Movies</h2>
+            <div class="mrow">
+                <div class="movie" onclick="showDescription('Movie Title 1', 'Short description of Movie 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
+                    <div class="movie-img">
+                        <img src="Images/movie3.jpg" alt="Movie 1">
+                    </div>
+                    <div class="movie-info">
+                        <h3>TENET</h3>
+                        <p>Armed with only one word—Tenet—and fighting for the survival of the entire world, the Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.</p>
+                    </div>
+                </div>
+                <div class="movie" onclick="showDescription('Movie Title 2', 'Short description of Movie 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
+                    <div class="movie-img">
+                        <img src="Images/movie4.jpg" alt="Movie 2">
+                    </div>
+                    <div class="movie-info">
+                        <h3>TOYS OF TERROR</h3>
+                        <p>Just before Christmas, young Zoe, her brother Franklin and their family move into a secluded mansion with a dark past. While the adults focus on renovating the place, the bored kids find a toy chest hidden in the attic, and are delighted when the toys inside magically come to life. But bizarre events soon begin to take place – events that threaten the family’s lives.</p>
+                    </div>
+                </div>
+                <div class="movie" onclick="showDescription('Movie Title 3', 'Short description of Movie 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
+                    <div class="movie-img">
+                        <img src="Images/movie2.jpg" alt="Movie 3">
+                    </div>
+                    <div class="movie-info">
+                        <h3>THE BATMAN</h3>
+                        <p>From Warner Bros. Pictures comes Matt Reeves’ “The Batman,” starring Robert Pattinson in the dual role of Gotham City’s vigilante detective and his alter ego, reclusive billionaire Bruce Wayne.</p>
+                    </div>
+                </div>
+				 <div class="movie" onclick="showDescription('Movie Title 3', 'Short description of Movie 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
+                    <div class="movie-img">
+                        <img src="Images/movie5.jpg" alt="Movie 3">
+                    </div>
+                    <div class="movie-info">
+                        <h3>DEEP BLUE SEA</h3>
+                        <p>Welcome to Little Happy, a tiny man-made island in the Mozambique Channel that’s home to a flourishing nursery of marine life, where Great Whites come to mate and give birth every year. This peaceful conservatory is overseen by Emma Collins and her team of environmentalists, determined to continue her late father’s legacy. </p>
+                    </div>
+                </div>
+				 <div class="movie" onclick="showDescription('Movie Title 3', 'Short description of Movie 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
+                    <div class="movie-img">
+                        <img src="Images/movie1.jpg" alt="Movie 3">
+                    </div>
+                    <div class="movie-info">
+                        <h3>KING RICHARD</h3>
+                        <p>Based on the true story that will inspire the world, Warner Bros. Pictures’ “King Richard follows the journey of Richard Williams, an undeterred father instrumental in raising two of the most extraordinarily gifted athletes of all time, who will end up changing the sport of tennis forever.</p>
+                    </div>
+                </div>
+				 <div class="movie" onclick="showDescription('Movie Title 3', 'Short description of Movie 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
+                    <div class="movie-img">
+                        <img src="Images/movie6.jpg" alt="Movie 3">
+                    </div>
+                    <div class="movie-info">
+                        <h3>JUST MERCY</h3>
+                        <p>A powerful and thought-provoking true story, “Just Mercy” follows young lawyer Bryan Stevenson (Jordan) and his history-making battle for justice. After graduating from Harvard, Bryan had his pick of lucrative jobs. Instead, he heads to Alabama to defend those wrongly condemned or who were not afforded proper representation, with the support of local advocate Eva Ansley (Larson).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#collections">Collections</a>
+            <a href="#feedback">Feedback</a>
+        </div>
+    </footer>
+
+    <div id="movie-popup" class="movie-popup">
+        <div class="movie-popup-content">
+            <span class="movie-popup-close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #222;
+			color: white;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .show {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .show img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+			height: 300px;
+
+        }
+        .show:hover img {
+            transform: scale(1.05);
+        }
+        .description {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s, visibility 0.5s;
+            border-radius: 10px;
+        }
+        .show.active .description {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:history.back()" class="back-button">Back</a>
+    <h1>TV Shows</h1>
+    <div class="container">
+        <div class="show" onclick="toggleDescription(this)">
+            <img src="Images/show3.jpg" alt="Show 1">
+            <div class="description">
+                <p>In this workplace comedy, a group of dedicated, passionate teachers — and a slightly tone-deaf principal — are brought together in a Philadelphia public school where, despite the odds stacked against them, they are determined to help their students succeed in life.</p>
+            </div>
+        </div>
+		<div class="show" onclick="toggleDescription(this)">
+            <img src="Images/show6.jpg" alt="Show 4">
+            <div class="description">
+                <p>Paris Hilton, fashion icon, entrepreneur, and global DJ phenom, prepares to add a new title to her collection…  bride. Finding love with Carter Reum, a successful venture capitalist, has brought Paris into the next phase of her life.</p>
+            </div>
+        </div>
+        <div class="show" onclick="toggleDescription(this)">
+            <img src="Images/show7.jpg" alt="Show 5">
+            <div class="description">
+                <p>Season three of SUPERMAN & LOIS opens weeks after Superman's blowout defeat of Ally Allston. Clark (Hoechlin) and Lois (Tulloch) are now working at the Smallville Gazette together and enjoying small town life.</p>
+            </div>
+        </div>
+        <div class="show" onclick="toggleDescription(this)">
+            <img src="Images/show4.jpg" alt="Show 2">
+            <div class="description">
+                <p>Nearly a year since the last tropical rendezvous, Bachelor in Paradise returns with a cast of standouts and fan favorites from The Bachelor and The Bachelorette. With Jesse Palmer as host and Wells Adams returning to the bar, these singles as hot as the sun are ready to take another shot at love when the ninth season of the hit series returns.</p>
+            </div>
+        </div>
+        <div class="show" onclick="toggleDescription(this)">
+            <img src="Images/show5.jpg" alt="Show 3">
+            <div class="description">
+                <p>They are a team of incredible crimefighters who have banded together to oppose evil, combat crime and clean up the streets of Gotham City. They are...okay, they're NOT Batman and Robin. </p>
+            </div>
+        </div>
+        
+        <div class="show" onclick="toggleDescription(this)">
+            <img src="Images/show8.jpg" alt="Show 6">
+            <div class="description">
+                <p>For young Sheldon Cooper, it isn't easy growing up in East Texas. Being a once-in-a-generation mind capable of advanced mathematics and science isn't always helpful in a land where church and football are king.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDescription(showElement) {
+            const descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(description => {
+                description.parentElement.classList.remove('active');
+            });
+            showElement.classList.add('active');
+        }
+    </script>
+</body>
+</html>
