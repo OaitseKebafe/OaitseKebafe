@@ -1,0 +1,45 @@
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
+
+
+function showDescription(title, description) {
+    document.getElementById('popup-title').innerText = title;
+    document.getElementById('popup-description').innerText = description;
+    document.getElementById('popup').style.display = 'block';
+    document.body.style.overflow = 'hidden'; 
+}
+
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.body.style.overflow = 'auto'; 
+}
+
+
+function showDescription(title, description) {
+    document.getElementById('popup-title').innerText = title;
+    document.getElementById('popup-description').innerText = description;
+    document.getElementById('movie-popup').style.display = 'block';
+    document.body.style.overflow = 'hidden'; 
+}
+
+function closePopup() {
+    document.getElementById('movie-popup').style.display = 'none';
+    document.body.style.overflow = 'auto'; 
+}
+
+
