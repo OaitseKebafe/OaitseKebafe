@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Warner Bros | Feedback</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<style>
+        .container {
+            position: center;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column;
+            padding: 20px 100px;
+        }
+
+        .container:after {
+            content: '';
+            position: center;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: url("img/png.png") no-repeat center;
+            background-size: cover;
+            filter: blur(50px);
+            z-index: -1;
+        }
+
+        .contact-box {
+            max-width: 850px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+			position: center;
+            background-color: black;
+            box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+        }
+
+        .left {
+            background: url("img/png.png") no-repeat center;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .right {
+            padding: 25px 40px;
+        }
+
+        h2 {
+            position: relative;
+            padding: 0 0 10px;
+            margin-bottom: 10px;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 50px;
+            border-radius: 2px;
+            background-color: #cdaa4d;
+        }
+
+        .field {
+            width: 100%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            outline: none;
+            background-color: #cdaa4d;
+            padding: 0.5rem 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 22px;
+            transition: .3s;
+        }
+
+        .field:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        textarea {
+            min-height: 150px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            background-color: #241e63;
+            color: #cdaa4d;
+            font-size: 1.1rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .btn:hover {
+            background-color: #342b99;
+        }
+
+        .field:focus {
+            border: 2px solid rgba(30,85,250,0.47);
+            background-color: #fff;
+        }
+
+        @media screen and (max-width: 880px) {
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+            .left {
+                height: 200px;
+            }
+        }
+	.footer {
+      color:#fff;
+      padding: 10px 0;
+      border-top: 1px solid white;
+    }
+    .footer .logo {
+      max-width: 100px;
+    }
+    .footer .social-icons a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 24px;
+    }
+.footer {
+          background-color: black;
+          padding: 10px 0;
+      }
+      .footer h5 {
+          font-size: 1.2rem;
+      }
+      .footer p {
+          font-size: 1rem;
+      }
+      .footer .social-icons {
+          display: flex;
+          justify-content: center;
+      }	
+</style>
+<body>
+ <header>
+        <nav class="nav nav-pills">
+        <ul class='nav-bar' style="margin-bottom: 0px;">
+            <li class='logo'><a href='#'><img src='wb100.png'></a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a href="TvShows.html">TvShows</a></li>
+                <li><a href="Games&Apps.html">Games&Apps</a></li>
+                <li><a href="Collections.html">Collections</a></li>
+                <li><a  class="nav-link active" aria-current="page" href="Feedback.html" style="color: white; background-color: #241e61;">Feedback</a></li>
+                <li class="social-icons">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-snapchat"></i></a>
+                </li> 
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+	</header>
+	<section>
+	<div class="container">
+        <p style="text-align: absolute; position: relative; font-weight: bold; font-size: 25px;">"Like a blockbuster script, your feedback is the plot twist that transforms our website into a box office hit. Join forces with Warner Bros. as we embark on this epic journey, shaping a digital universe where every critique is a superhero origin story waiting to be told."</p>
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <input type="text" class="field" id="name" placeholder="Your Name">
+                <input type="email" class="field" id="email" placeholder="Your Email">
+                <input type="text" class="field" id="country" placeholder="Country/Region">
+                <textarea placeholder="Message" class="field" id="message"></textarea>
+                <button class="btn" id="submitBtn">Send</button>
+            </div>
+        </div>
+		</section>
+<article>
+ <footer class="footer text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <img src="wb100.png" alt="Logo" class="logo">
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Follow us</h5>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contact</h5>
+        <p>
+          1234 Street Name, City, State 56789<br>
+          Email: info@example.com<br>
+          Phone: +1 234 567 890
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2024 Warner Brothers	
+</article>
+	 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get form fields
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const country = document.getElementById('country').value;
+            const message = document.getElementById('message').value;
+
+            // Simple validation
+            const namePattern = /^[A-Za-z\s]+$/;
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            const countryPattern = /^[A-Za-z\s]+$/;
+            const messagePattern = /^[A-Za-z0-9\s.,?!]+$/;
+
+            if (!namePattern.test(name)) {
+                alert('Please enter a valid name (alphabets only).');
+                return;
+            }
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            if (!countryPattern.test(country)) {
+                alert('Please enter a valid country/region (alphabets only).');
+                return;
+            }
+            if (!messagePattern.test(message)) {
+                alert('Please enter a valid message (alphabets and numbers only).');
+                return;
+            }
+
+            // Show confirmation message
+            alert('Thank you for your feedback! Your message has been sent.');
+
+            // Reset the form
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('country').value = '';
+            document.getElementById('message').value = '';
+        });
+    </script>
+</body>
+</html>
